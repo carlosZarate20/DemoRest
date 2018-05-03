@@ -2,11 +2,11 @@ package service;
 
 import java.util.Hashtable;
 import org.springframework.stereotype.Service;
-import model.Person;
+import model.User;
 
 @Service
 public class PersonService {
-	Hashtable<String, Person> persons = new Hashtable<String, Person>();
+	Hashtable<String, User> persons = new Hashtable<String, User>();
 	public PersonService(){
 		/*Person p = new Person();
 		p.setId("1");
@@ -23,7 +23,7 @@ public class PersonService {
 		persons.put("2",p);*/
 	}
 	
-	public Person getPerson(String id){
+	public User getPerson(String id){
 		if(persons.containsKey(id)){
 			return persons.get(id);
 		}else{
@@ -31,7 +31,7 @@ public class PersonService {
 		}
 	}
 	
-	public Hashtable<String,Person> getAll(){
+	public Hashtable<String,User> getAll(){
 		return persons;
 	}
 	
