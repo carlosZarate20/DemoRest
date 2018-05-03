@@ -1,34 +1,42 @@
 package model;
 
 public class Person {
-	String id;
-	String nombre;
-	String apellido;
-	int edad;
-
-	public String getId() {
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getNombre() {
-		return nombre;
+
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getApellido() {
-		return apellido;
+
+	public String getLastName() {
+		return lastName;
 	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-	public int getEdad() {
-		return edad;
+
+	public String getEmail() {
+		return email;
 	}
-	public void setEdad(int edad) {
-		this.edad = edad;
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
+
 	
 }

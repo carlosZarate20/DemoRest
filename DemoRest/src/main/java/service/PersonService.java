@@ -8,7 +8,7 @@ import model.Person;
 public class PersonService {
 	Hashtable<String, Person> persons = new Hashtable<String, Person>();
 	public PersonService(){
-		Person p = new Person();
+		/*Person p = new Person();
 		p.setId("1");
 		p.setNombre("Carlos");
 		p.setApellido("Zarate");
@@ -20,7 +20,7 @@ public class PersonService {
 		p.setNombre("Marita");
 		p.setApellido("Lozano");
 		p.setEdad(21);
-		persons.put("2",p);
+		persons.put("2",p);*/
 	}
 	
 	public Person getPerson(String id){
